@@ -1,0 +1,32 @@
+{
+  "name": "rxwire",
+  "author": "Conner Douglass <conner.douglass@gmail.com>",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "homepage": "https://github.com/connerdouglass/rxwire",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/connerdouglass/rxwire.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "rxjs",
+    "observable",
+    "ipc",
+    "socket"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build:check": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "prepare": "npm run clean && npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "rxjs": "^6.6.3"
+  }
+}
